@@ -1,0 +1,22 @@
+#! /bin/bash
+set -e
+apt-get -y update
+apt-get -y upgrade
+cp /etc/apt/sources.list /etc/apt/sources.list_bak
+wget http://www.openstudioproductions.org/local--files/home/sources.list.openstudiopro
+mv sources.list.openstudiopro /etc/apt/sources.list
+#kernels key
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F141B61E
+#puredyne key
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 79696851 
+#openstudio10 key
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EBE5EE7C   
+#openstudio key
+wget http://www.openstudioproductions.org/local--files/home/key.txt
+apt-key add key.txt
+apt-get -y update
+apt-get -y upgrade
+apt-get -y install jackd
+apt-get -y remove  computer-janitor computer-janitor-gtk 
+apt-get -y install ubuntu-restricted-extras
+exit
