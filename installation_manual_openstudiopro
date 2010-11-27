@@ -9,4 +9,4 @@ chmod +x openstudiopro-conf-3
 ./openstudiopro-conf-3
 
 dpkg -i openstudiopro-tasks_0.1_all.deb
-apt-get install 
+apt-get install openstudiopro 
