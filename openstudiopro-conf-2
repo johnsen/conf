@@ -2,17 +2,19 @@
 set -e
 apt-get -y update
 apt-get -y upgrade
+apt-get -y install git-core
+git clone git@github.com:johnsen/confopenstudio.git
 cp /etc/apt/sources.list /etc/apt/sources.list_bak
-wget http://www.openstudioproductions.org/local--files/home/sources.list.openstudiopro
+cd confopenstudio/
 mv sources.list.openstudiopro /etc/apt/sources.list
+apt-get -y update
+apt-get -y upgrade
 #kernels key
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F141B61E
 #puredyne key
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 79696851 
 #openstudio10 key
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EBE5EE7C   
-#openstudio key
-wget http://www.openstudioproductions.org/local--files/home/key.txt
 apt-key add key.txt
 apt-get -y update
 apt-get -y upgrade
