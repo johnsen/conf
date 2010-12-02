@@ -1,7 +1,7 @@
 #! /bin/bash
 set -e
 apt-get -y update
-apt-get -u upgrade
+apt-get -y upgrade
 #apt-get -y --force-yes upgrade
 #apt-get -y install git-core
 cp /etc/apt/sources.list /etc/apt/sources.list_bak
@@ -20,6 +20,6 @@ apt-key add key.txt
 apt-get -y update
 apt-get -y --force-yes upgrade
 apt-get -y install jackd
-apt-get -y remove  computer-janitor computer-janitor-gtk 
+apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy
 apt-get -y install ubuntu-restricted-extras
 exit
