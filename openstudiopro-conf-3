@@ -33,9 +33,16 @@ apt-get -y update
 apt-get -y --force-yes upgrade
 echo "installing JACK, choose yes!"
 apt-get -y install jackd
-echo "remove some packages, one of them is apt-xapian-index, so you can't use the quick search option of the synaptic softwaremanager..."
-apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy apt-xapian-index
 echo "installing multimedia, mp3 etc., codecs"
 apt-get -y install ubuntu-restricted-extras
+echo "installing openstudiopro software"
 dpkg -i openstudio-tasks_0.1_all.deb
+apt-get -y install openstudio-admin openstudio-desktop openstudio-djing openstudio-drums openstudio-fluxbox openstudio-graphics \
+openstudio-guitar openstudio-jack openstudio-looping openstudio-midi openstudio-mixing openstudio-multimedia openstudio-musicnotation  \
+openstudio-musiciantools openstudio-plugins-dssi openstudio-plugins-ladspa openstudio-plugins-lv2 openstudio-realtime openstudio-recording \
+openstudio-timestretching openstudio-samplers openstudio-soundsynthesis openstudio-synths
+echo "remove some packages, one of them is apt-xapian-index, so you can't use the quick search option of the synaptic softwaremanager..."
+apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy apt-xapian-index
+cd ..
+rm -r confopenstudiopro
 exit
