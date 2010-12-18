@@ -1,0 +1,11 @@
+sudo apt-get install wget git-core
+
+git clone git://github.com/johnsen/confopenstudio.git
+
+cd confopenstudio
+
+chmod +x openstudiopro-conf-3
+
+sudo su
+
+./openstudiopro-conf-3
