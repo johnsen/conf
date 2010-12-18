@@ -37,4 +37,5 @@ echo "remove some packages, one of them is apt-xapian-index, so you can't use th
 apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy apt-xapian-index
 echo "installing multimedia, mp3 etc., codecs"
 apt-get -y install ubuntu-restricted-extras
+dpkg -i openstudio-tasks_0.1_all.deb
 exit
