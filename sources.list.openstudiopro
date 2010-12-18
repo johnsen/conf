@@ -73,8 +73,8 @@ deb http://ppa.launchpad.net/peerjam/peerjam-stable/ubuntu lucid main
 #deb http://ppa.launchpad.net/peerjam/linuxvst/ubuntu lucid main 
 
 #frescobaldi ppa
-deb http://ppa.launchpad.net/frescobaldi/ppa/ubuntu lucid main 
-deb-src http://ppa.launchpad.net/frescobaldi/ppa/ubuntu lucid main 
+#deb http://ppa.launchpad.net/frescobaldi/ppa/ubuntu lucid main 
+#deb-src http://ppa.launchpad.net/frescobaldi/ppa/ubuntu lucid main 
 
 #musescore ppa
 deb http://ppa.launchpad.net/mscore-ubuntu/mscore-stable/ubuntu lucid main 
