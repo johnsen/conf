@@ -1,5 +1,6 @@
 #! /bin/bash
 set -e
+echo "update and upgrade"
 apt-get -y update
 apt-get -y upgrade
 #apt-get -y --force-yes upgrade
@@ -7,6 +8,7 @@ apt-get -y upgrade
 cp /etc/apt/sources.list /etc/apt/sources.list_bak
 #git clone git@github.com:johnsen/confopenstudio.git
 #cd confopenstudio/
+echo "add openstudiopro sources"
 cp sources.list.openstudiopro /etc/apt/sources.list
 apt-get -y update
 #apt-get -y upgrade
@@ -14,8 +16,8 @@ apt-get -y update
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F141B61E
 #puredyne key
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 79696851 
-#openstudio10 key
-#apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EBE5EE7C   
+#peerjam key
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EBE5EE7C   
 #frescobaldi key
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B3227623
 #musescore key
@@ -29,7 +31,10 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4716DAB5
 apt-key add key.txt
 apt-get -y update
 apt-get -y --force-yes upgrade
+echo "installing JACK, choose yes!"
 apt-get -y install jackd
-apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy
+echo "remove some packages, one of them is apt-xapian-index, so you can't use the quick search option of the synaptic softwaremanager..."
+apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy apt-xapian-index
+echo "installing multimedia, mp3 etc., codecs"
 apt-get -y install ubuntu-restricted-extras
 exit
