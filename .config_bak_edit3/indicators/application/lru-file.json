@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "nautilus": { "first-time": "2010-12-07T15:58:55.546456Z", "last-time": "2010-12-07T15:58:55.546461Z", "category": "ApplicationStatus"},
+  "bluetooth-manager": { "first-time": "2010-11-27T18:56:10.018190Z", "last-time": "2010-12-12T12:00:25.930177Z", "category": "Hardware"},
+  "gnome-power-manager": { "first-time": "2010-11-27T18:56:10.017872Z", "last-time": "2010-12-12T12:00:25.930013Z", "category": "Hardware"},
+  "PolicyKit-gnome": { "first-time": "2010-12-03T18:39:49.624539Z", "last-time": "2010-12-03T18:39:49.624541Z", "category": "SystemServices"}
+}
