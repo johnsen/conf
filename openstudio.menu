@@ -36,7 +36,7 @@
 		<AppDir>/usr/share/applications/openstudio</AppDir>
 		<Menu>
 			<Name>Audio Edit</Name>
-			<Directory>AudioEdit-openstudio.directory</Directory>
+			<Directory>AudioEdit-os.directory</Directory>
 			<Include>
 				<Filename>audacity.desktop</Filename>
 				<Filename>gcdmaster.desktop</Filename>
@@ -54,6 +54,7 @@
 				<Filename>sweep.desktop</Filename>
 				<Filename>terminatorx.desktop</Filename>
 				<Filename>arpage.desktop</Filename>
+				<Filename>kluppe.desktop</Filename>
 			</Include>
 		</Menu>
 		<Exclude>
@@ -72,6 +73,7 @@
 			<Filename>sweep.desktop</Filename>
 			<Filename>terminatorx.desktop</Filename>
 			<Filename>arpage.desktop</Filename>
+			<Filename>kluppe.desktop</Filename>
 		</Exclude>
 		<Menu>
 			<Name>Effects</Name>
@@ -101,7 +103,7 @@
 		</Exclude>
 		<Menu>
 			<Name>Recording</Name>
-			<Directory>Recording-openstudio.directory</Directory>
+			<Directory>Recording-os.directory</Directory>
 			<Include>
 				<Filename>ardour.desktop</Filename>
 				<Filename>jack-capture-os.desktop</Filename>
@@ -147,6 +149,8 @@
 				<Filename>kmidimon.desktop</Filename>
 				<Filename>oom.desktop</Filename>
 				<Filename>oom2.desktop</Filename>
+				<Filename>lmms.desktop</Filename>
+				<Filename>composite.desktop</Filename>
 			</Include>
 		</Menu>
 		<Exclude>
@@ -169,6 +173,8 @@
 			<Filename>kmidimon.desktop</Filename>
 			<Filename>oom.desktop</Filename>
 			<Filename>oom2.desktop</Filename>
+			<Filename>lmms.desktop</Filename>
+			<Filename>composite.desktop</Filename>
 		</Exclude>
 		<Menu>
 			<Name>JACK</Name>
@@ -208,6 +214,7 @@
 				<Filename>denemo.desktop</Filename>
 				<Filename>nted.desktop</Filename>
 				<Filename>fmit.desktop</Filename>
+				<Filename>tuxguitar.desktop</Filename>
 			</Include>
 		</Menu>
 		<Exclude>
@@ -219,6 +226,8 @@
 			<Filename>denemo.desktop</Filename>
 			<Filename>nted.desktop</Filename>
 			<Filename>fmit.desktop</Filename>
+			<Filename>tuxguitar.desktop</Filename>
+			
 		</Exclude>
 		
 		<Menu>
@@ -238,6 +247,7 @@
 				<Filename>amsynth.desktop</Filename>
 				<Filename>aeolus.desktop</Filename>
 				<Filename>foo-yc20.desktop</Filename>
+				<Filename>genpo.desktop</Filename>
 			</Include>
 		</Menu>
 		<Exclude>
@@ -255,6 +265,7 @@
 			<Filename>amsynth.desktop</Filename>
 			<Filename>aeolus.desktop</Filename>
 			<Filename>foo-yc20.desktop</Filename>
+			<Filename>genpo.desktop</Filename>
 		</Exclude>
 		<Menu>
 			<Name>Sound Synthesis</Name>
@@ -283,6 +294,9 @@
 				<Filename>gjackclock.desktop</Filename>
 				<Filename>gjacktransport.desktop</Filename>
 				<Filename>kdenlive.desktop</Filename>
+				<Filename>kino.desktop</Filename>
+				<Filename>openmovieeditor.desktop</Filename>
+				<Filename>cinelerra.desktop</Filename>
 			</Include>
 		</Menu>
 		<Exclude>
@@ -293,6 +307,10 @@
 			<Filename>gjackclock.desktop</Filename>
 			<Filename>gjacktransport.desktop</Filename>
 			<Filename>kdenlive.desktop</Filename>
+			<Filename>kino.desktop</Filename>
+                        <Filename>openmovieeditor.desktop</Filename>
+                        <Filename>cinelerra.desktop</Filename>
+
 		</Exclude>
 		<DefaultLayout inline="false"/>
 		<Menu>
