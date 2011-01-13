@@ -72,6 +72,10 @@ deb http://ppa.launchpad.net/peerjam/peerjam-stable/ubuntu lucid main
 #not supported! You're on your own when you get in trouble!
 #deb http://ppa.launchpad.net/peerjam/linuxvst/ubuntu lucid main 
 
+#ladi session manager, not supported
+deb http://ppa.launchpad.net/peerjam/ladi/ubuntu lucid main 
+deb-src http://ppa.launchpad.net/peerjam/ladi/ubuntu lucid main 
+
 #frescobaldi ppa
 #deb http://ppa.launchpad.net/frescobaldi/ppa/ubuntu lucid main 
 #deb-src http://ppa.launchpad.net/frescobaldi/ppa/ubuntu lucid main 

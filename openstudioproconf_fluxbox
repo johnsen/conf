@@ -1,0 +1,7 @@
+cp Xresources_openstudio to ~/.Xresources
+
+cp .fluxbox/keys .fluxbox/keys_orig
+cp .fluxbox/startup .fluxbox/startup_orig
+
+cp keys_openstudio
+cp startup_openstudio
