@@ -27,6 +27,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6B51D222
 #mixxx
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4716DAB5
 apt-key add key.txt
+dpkg -i tangostudio-keyring_2010.05.19_all.deb
 apt-get -y update
 apt-get -y --force-yes upgrade
 echo "installing JACK, choose yes!"
