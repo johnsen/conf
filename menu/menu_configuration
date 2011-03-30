@@ -1,0 +1,17 @@
+/usr/share/desktop-directories
+
+/etc/xdg/menus$ ls
+applications.menu      applications.menu_openstudio  gnomecc.menu             kde4-applications.menu  kde-information.menu
+applications.menu_bak  applications-merged           gnome-screensavers.menu  kde-applications.menu   settings.menu
+
+
+/etc/xdg/menus/applications-merged$ ls
+exclude.menu_bak  exclude.menu.save  multimedia.menu_bak  openstudio.menu  openstudio.menu_bak1  wine.menu
+
+
+/usr/share/applications$ ls
+a2jmidid-os.desktop               gmidimonitor-os.desktop    japa-os.desktop                     Qutecsound-os.desktop     specimen-os.desktop
+evince.desktop_bak                hexter-os.desktop          mscore.desktop_bak                  renoise.desktop_bak       Whysynth-os.desktop
+fantasia-os.desktop               jack-capture-os.desktop    openstudio-specimen-os.desktop_bak  scvim.desktop_bak         yoshimi.desktop_bak
+ffado.org-ffadomixer.desktop_bak  jack-keyboard.desktop_bak  qjackctl.desktop_bak                sooperlooper.desktop_bak
+
