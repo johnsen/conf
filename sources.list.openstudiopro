@@ -54,28 +54,34 @@ deb-src http://security.ubuntu.com/ubuntu lucid-security multiverse
 
 #realtime kernels
 deb http://download.tuxfamily.org/tangostudio/ lucid-lowlatency main 
+
 #deb http://ppa.launchpad.net/abogani/ppa/ubuntu lucid main
 #deb-src http://ppa.launchpad.net/abogani/ppa/ubuntu lucid main
-#stable
-deb http://ftp5.gwdg.de/pub/opensuse/repositories/home:/roooz:/lucid/xUbuntu_10.04/ ./
 
-#puredyne repo for puredata, supercollider and other soundsynthesis software
-deb http://ppa.launchpad.net/puredyne-team/ppa/ubuntu lucid main 
-deb-src http://ppa.launchpad.net/puredyne-team/ppa/ubuntu lucid main 
-
-#linuxpeerjam
 #stable
-deb http://ppa.launchpad.net/peerjam/peerjam-stable/ubuntu lucid main
+deb http://ftp5.gwdg.de/pub/opensuse/repositories/home:/open-studio/xUbuntu_10.04/ ./
 
 #testing new(er) packages, use at your own risk!
-#deb http://ppa.launchpad.net/peerjam/peerjam-testing/ubuntu lucid main
+deb http://ftp5.gwdg.de/pub/opensuse/repositories/home:/open-studio:/testing/xUbuntu_10.04/ ./
+ 
 
-#not supported! You're on your own when you get in trouble!
-#deb http://ppa.launchpad.net/peerjam/linuxvst/ubuntu lucid main 
+#ppa
+#stable
+deb http://ppa.launchpad.net/openstudio/stable/ubuntu lucid main 
+deb-src http://ppa.launchpad.net/openstudio/stable/ubuntu lucid main 
 
-#ladi session manager, not supported
-deb http://ppa.launchpad.net/peerjam/ladi/ubuntu lucid main 
-deb-src http://ppa.launchpad.net/peerjam/ladi/ubuntu lucid main 
+#testing new(er) packages, use at your own risk!
+#deb http://ppa.launchpad.net/openstudio/testing/ubuntu lucid main
+#deb-src http://ppa.launchpad.net/openstudio/testing/ubuntu lucid main 
+
+#ladish.org not offcially supported
+deb http://ppa.launchpad.net/openstudio/ladish/ubuntu lucid main 
+deb-src http://ppa.launchpad.net/openstudio/ladish/ubuntu lucid main 
+
+#puredyne repo for puredata, supercollider and other soundsynthesis software
+deb http://ppa.launchpad.net/puredyne-team/ppa/ubuntu lucid main
+deb-src http://ppa.launchpad.net/puredyne-team/ppa/ubuntu lucid main
+
 
 #frescobaldi ppa
 #deb http://ppa.launchpad.net/frescobaldi/ppa/ubuntu lucid main 

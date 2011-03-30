@@ -15,7 +15,9 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F141B61E
 #puredyne key
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 79696851 
 #peerjam key
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EBE5EE7C   
+#apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EBE5EE7C   
+#openstudio ppa
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7616BDA
 #frescobaldi key
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B3227623
 #musescore key
