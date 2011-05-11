@@ -8,4 +8,4 @@ Name[en_US]=JACK
 Comment[en_US]=JACK & ALSA tools
 Name=JACK
 Comment=JACK & ALSA tools
-Icon=folder
+Icon=qjackctl

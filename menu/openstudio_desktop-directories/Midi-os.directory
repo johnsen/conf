@@ -8,4 +8,4 @@ Name[en_US]=MIDI
 Comment[en_US]=Midi tools
 Name=MIDI
 Comment=Midi tools
-Icon=folder
+Icon=jack-keyboard
