@@ -1,0 +1,11 @@
+<elgeneralmidi> you don't have upgraded all packages for that
+<elgeneralmidi> upgrade libgnome-media0
+<elgeneralmidi> gnome-media
+<elgeneralmidi> gnome-media-common
+<elgeneralmidi> gnome-settings-daemon
+<elgeneralmidi> gnome-applets-data
+<elgeneralmidi> gnome-applets
+
+
+
+http://www.jeffsplace.net/node/12

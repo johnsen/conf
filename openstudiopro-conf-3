@@ -43,7 +43,7 @@ openstudio-guitar openstudio-jack openstudio-looping openstudio-midi openstudio-
 openstudio-musiciantools openstudio-plugins-dssi openstudio-plugins-ladspa openstudio-plugins-lv2 openstudio-realtime openstudio-recording \
 openstudio-timestretching openstudio-samplers openstudio-soundsynthesis openstudio-synths
 echo "remove some packages, one of them is apt-xapian-index, so you can't use the quick search option of the synaptic softwaremanager..."
-apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy apt-xapian-index
+apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy evolution
 adduser openstudio audio
 cd ..
 rm -r confopenstudio
