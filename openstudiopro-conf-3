@@ -5,31 +5,14 @@ apt-get -y update
 apt-get -y upgrade
 #apt-get -y --force-yes upgrade
 #apt-get -y install git-core
-cp /etc/apt/sources.list /etc/apt/sources.list_orig
-echo "add openstudiopro sources"
-cp sources.list.openstudiopro /etc/apt/sources.list
-apt-get -y update
-#apt-get -y upgrade
-#kernels key
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F141B61E
-#puredyne key
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 79696851 
-#peerjam key
-#apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EBE5EE7C   
-#openstudio ppa
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7616BDA
-#frescobaldi key
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B3227623
-#musescore key
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3A258030
-#lmms key
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ADDE29B2
-#dominic 
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6B51D222
-#mixxx
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4716DAB5
+#cp /etc/apt/sources.list /etc/apt/sources.list_orig
+#echo "add openstudiopro sources"
+#cp sources.list.openstudiopro /etc/apt/sources.list
+add-apt-repository ppa:puredyne-team/ppa
+add-apt-repository ppa:openstudio/stable
 apt-key add key.txt
-dpkg -i tangostudio-keyring_2010.05.19_all.deb
+dpkg -i tangostudio-*.deb
+apt-get install medibuntu-keyring
 apt-get -y update
 apt-get -y --force-yes upgrade
 echo "installing JACK, choose yes!"
