@@ -3,30 +3,25 @@ set -e
 echo "update and upgrade"
 apt-get -y update
 apt-get -y upgrade
-#apt-get -y --force-yes upgrade
-#apt-get -y install git-core
-#cp /etc/apt/sources.list /etc/apt/sources.list_orig
-#echo "add openstudiopro sources"
-#cp sources.list.openstudiopro /etc/apt/sources.list
 add-apt-repository ppa:puredyne-team/ppa
 add-apt-repository ppa:openstudio/stable
 apt-key add key.txt
 dpkg -i tangostudio-*.deb
-apt-get -y install openstudio-apt
+dpkg -i openstudio*.deb
+#apt-get -y install openstudio-apt
 apt-get install medibuntu-keyring
 apt-get -y update
 apt-get -y --force-yes upgrade
-echo "installing JACK, choose yes!"
+#installing JACK
 apt-get -y install jackd
-echo "installing multimedia, mp3 etc., codecs"
+#installing multimedia codecs
 apt-get -y install ubuntu-restricted-extras
-echo "installing openstudiopro software"
-dpkg -i openstudio-tasks_0.1_all.deb
+#install meta
 apt-get -y install openstudio-admin openstudio-desktop openstudio-djing openstudio-drums openstudio-fluxbox openstudio-graphics \
 openstudio-guitar openstudio-jack openstudio-looping openstudio-midi openstudio-mixing openstudio-multimedia openstudio-musicnotation  \
 openstudio-musiciantools openstudio-plugins-dssi openstudio-plugins-ladspa openstudio-plugins-lv2 openstudio-realtime openstudio-recording \
 openstudio-timestretching openstudio-samplers openstudio-soundsynthesis openstudio-synths
-echo "remove some packages, one of them is apt-xapian-index, so you can't use the quick search option of the synaptic softwaremanager..."
+#rm not needed packages
 apt-get -y purge  computer-janitor computer-janitor-gtk gnome-games-common gbrainy evolution
 #adduser openstudio audio
 apt-get -y install openstudio-swappiness openstudiomenu
